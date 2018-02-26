@@ -1,1 +1,259 @@
-<h1> company </h1>
+<!DOCTYPE html>
+<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background:red;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family:'Sedgwick Ave Display', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: blue;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family:'Sedgwick Ave Display', cursive;
+  text-align: center;
+  color: blue;
+  margin: 0px 0 70px 0;
+}
+p {
+  color:yellow;
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  font-family:'Pacifico', cursive;
+  background:brown;
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://steemitimages.com/DQmeX931zfHS4UpEmUnWQsPnSKqNUJQbWg8ai42rddN3KWp/6.jpg"); font-family:'Sedgwick Ave Display', cursive;
+}
+.second{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/86/70/a0/8670a05f5f2978aeeceb80700b985747.png");
+}
+.dessert{
+  background-image: url("https://www.laylita.com/recipes/wp-content/uploads/2016/05/Pineapple-flan-dessert-650x432.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Fernando's Restaurant</h1>
+<h2>A Ecudorian Restaurant</h2>
+<div class="first">
+  <p> Bolon <span class="price">$5</span><br/>
+  <small>It made of green plantain and inside it has pork and cheese.On the side u can have a cup of coffe with it. </small></p> 
+</div>
+
+<div class="second">
+  <p>Encebollado <span class="price">$15</span><br/>
+  
+  <small>It's normal soup but it has fish,chips of green plantain and salad.On the side u can put rice or nuts for better taste.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Flan<span class="price">$8</span><b/>
+  
+  <small> crème caramel it made out of milk,eggs and sugar.It's verygood give it a try.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+<!DOCTYPE html>
+<head>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/jquery.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Londrina+Shadow' rel='stylesheet' type='text/css'>
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background:red;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family:'Sedgwick Ave Display', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: blue;
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family:'Sedgwick Ave Display', cursive;
+  text-align: center;
+  color: blue;
+  margin: 0px 0 70px 0;
+}
+p {
+  color:yellow;
+  background: black;
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  font-family:'Pacifico', cursive;
+  background:brown;
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://steemitimages.com/DQmeX931zfHS4UpEmUnWQsPnSKqNUJQbWg8ai42rddN3KWp/6.jpg"); font-family:'Sedgwick Ave Display', cursive;
+}
+.second{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/86/70/a0/8670a05f5f2978aeeceb80700b985747.png");
+}
+.dessert{
+  background-image: url("https://www.laylita.com/recipes/wp-content/uploads/2016/05/Pineapple-flan-dessert-650x432.jpg");
+}
+.price {
+  float: right;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>Fernando's Restaurant</h1>
+<h2>A Ecudorian Restaurant</h2>
+<div class="first">
+  <p> Bolon <span class="price">$5</span><br/>
+  <small>It made of green plantain and inside it has pork and cheese.On the side u can have a cup of coffe with it. </small></p> 
+</div>
+
+<div class="second">
+  <p>Encebollado <span class="price">$15</span><br/>
+  
+  <small>It's normal soup but it has fish,chips of green plantain and salad.On the side u can put rice or nuts for better taste.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>Flan<span class="price">$8</span><b/>
+  
+  <small> crème caramel it made out of milk,eggs and sugar.It's verygood give it a try.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>
+
